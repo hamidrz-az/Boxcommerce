@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from '../../shared/material.module';
 import { HeaderComponent } from '../../core/components/header/header.component';
 
 @Component({
@@ -8,8 +7,6 @@ import { HeaderComponent } from '../../core/components/header/header.component';
   standalone: true,
   imports: [RouterModule, HeaderComponent],
   templateUrl: './content-layout.component.html',
-  styleUrl: './content-layout.component.scss'
+  styleUrl: './content-layout.component.scss',
 })
-export class ContentLayoutComponent {
-
-}
+export class ContentLayoutComponent {}

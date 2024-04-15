@@ -6,8 +6,9 @@ mat-toolbar {
   }
   div {
     margin: auto;
+    font-size: 1rem;
     a {
-      text-transform: capitalize;
+      text-transform: uppercase;
       &.active {
         color: #c770e1;
         font-weight: bold;

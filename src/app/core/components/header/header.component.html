@@ -1,8 +1,8 @@
-<mat-toolbar color="">
+<mat-toolbar>
     <mat-icon svgIcon="logo"></mat-icon>
     <div>
         <a mat-button *ngFor="let item of nav; let i = index" [routerLink]='item.routerLink'
-            [routerLinkActive]="item.routerLink ? 'group active' : ''"
+            [routerLinkActive]="item.routerLink ? 'active' : ''"
             [routerLinkActiveOptions]="{ exact: true }">{{item.title}}</a>
     </div>
 </mat-toolbar>

@@ -1,1 +1,19 @@
-<p>unit-converter works!</p>
+<section class="py">
+    <bxc-converter-form [listOptions]="LengthUnitList" (onConvert)="handleConversion($event)" [loading]="loading"
+        (onSwitch)="handleSwithc($event)"></bxc-converter-form>
+</section>
+
+<section class="py">
+    <ng-container *ngIf="calculatedRes">
+        <bxc-display-result [calculatedRes]="calculatedRes"></bxc-display-result>
+    </ng-container>
+    <ng-container *ngIf="loading">
+        <mat-spinner></mat-spinner>
+    </ng-container>
+</section>
+
+<hr>
+
+<section>
+    <bxc-history-table></bxc-history-table>
+</section>

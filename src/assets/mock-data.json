@@ -1,0 +1,47 @@
+[
+  {
+    "base": "Metre",
+    "exchange_rates": {
+      "Centimetre": 100,
+      "Foot": 3.28084,
+      "Yard": 1.09361,
+      "Inch": 39.3701
+    }
+  },
+  {
+    "base": "Centimetre",
+    "exchange_rates": {
+      "Metre": 0.01,
+      "Foot": 0.0328084,
+      "Yard": 0.0109361,
+      "Inch": 0.393701
+    }
+  },
+  {
+    "base": "Foot",
+    "exchange_rates": {
+      "Metre": 0.3048,
+      "Centimetre": 30.48,
+      "Yard": 0.333333,
+      "Inch": 12
+    }
+  },
+  {
+    "base": "Yard",
+    "exchange_rates": {
+      "Metre": 0.9144,
+      "Centimetre": 91.44,
+      "Foot": 3,
+      "Inch": 36
+    }
+  },
+  {
+    "base": "Inch",
+    "exchange_rates": {
+      "Metre": 0.0254,
+      "Centimetre": 2.54,
+      "Foot": 0.0833333,
+      "Yard": 0.0277778
+    }
+  }
+]

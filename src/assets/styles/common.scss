@@ -1,0 +1,29 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: calc(100% - 1em);
+  margin: 0 !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.py {
+  padding: 1rem 0;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+mat-spinner {
+  margin: 0 auto;
+}
+
+.lg-none {
+  display: none !important;
+}

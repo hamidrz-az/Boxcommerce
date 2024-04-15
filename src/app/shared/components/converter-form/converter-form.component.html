@@ -1,0 +1,38 @@
+<form [formGroup]="form" #formGroupDirective="ngForm" (ngSubmit)="exchangeRates()"
+    (keyup.enter)="$event.preventDefault()">
+
+    <mat-form-field appearance="outline">
+        <mat-label>Amount</mat-label>
+        <input matInput formControlName="amount" type="number">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>From</mat-label>
+        <mat-select formControlName="from">
+            <mat-option [value]="option" *ngFor="let option of listOptions()">{{ option }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <button mat-fab color="primary" type="button" aria-label="switch icon" class="switch sm-none"
+        (click)="switchAction()" [disabled]="!(toControl.value && fromControl.value) || loading()">
+        <mat-icon>swap_horiz</mat-icon>
+    </button>
+
+    <button mat-fab color="primary" type="button" aria-label="switch icon" class="lg-none mb"
+        (click)="switchAction()" [disabled]="!(toControl.value && fromControl.value) || loading()">
+        <mat-icon>swap_vert</mat-icon>
+    </button>
+
+    <mat-form-field appearance="outline">
+        <mat-label>To</mat-label>
+        <mat-select formControlName="to">
+            <mat-option [value]="option" *ngFor="let option of listOptions()">{{ option }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button class="!h-11 w-24 mr-2" color="primary" type="submit"
+        [disabled]="form.pristine || !form.valid || loading()">
+        Convert
+    </button>
+
+</form>

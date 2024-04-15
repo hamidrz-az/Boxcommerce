@@ -1,0 +1,14 @@
+.result_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+
+  span {
+    padding: 0 0.5rem;
+    &.dest_title {
+      color: #1dc4e9;
+    }
+  }
+}

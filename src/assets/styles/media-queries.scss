@@ -1,0 +1,22 @@
+@media only screen and (max-width: 848px) {
+  form {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .mat-mdc-form-field {
+    width: 100%;
+  }
+
+  .sm-none {
+    display: none !important;
+  }
+
+  .lg-none {
+    display: block !important;
+  }
+
+  .result_wrapper {
+    font-size: 2rem !important;
+  }
+}
